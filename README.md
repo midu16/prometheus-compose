@@ -42,3 +42,5 @@ Combined Memory: 4,833MiB
 ## Documentation
 1. https://prometheus.io/docs/guides/tls-encryption/
 2. https://docs.nginx.com/nginx-ingress-controller/overview/#what-is-the-ingress
+3. https://prometheus.io/docs/prometheus/latest/storage/
+4. https://wiki.opnfv.org/display/fastpath/Open+vSwitch+-+Provisioning+and+Monitoring+with+vswitch+Extended+NIC+stats+-+User+Guide
