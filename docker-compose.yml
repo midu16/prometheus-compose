@@ -12,6 +12,11 @@ services:
     command:
       - '--web.enable-lifecycle'
       - '--config.file=/etc/prometheus/prometheus.yml'
+    storage_opt:
+      size: '20G'
+    restart: 
+      - unless-stopped
+      - on-failure
 
 volumes:
   prometheus-data:
