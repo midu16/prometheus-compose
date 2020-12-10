@@ -1,6 +1,8 @@
 version: '2'
 services:
   prometheus:
+    name: prometheus
+    hostname: prometheus
     image: prom/prometheus:latest
     ports:
       - '9000:9090'
