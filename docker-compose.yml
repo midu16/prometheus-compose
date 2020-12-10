@@ -12,9 +12,9 @@ services:
     command:
       - '--web.enable-lifecycle'
       - '--config.file=/etc/prometheus/prometheus.yml'
-    storage_opt:
-      size: '20G'
-    mem_limit: 8GB
+#    storage_opt:
+#      size: '20G'
+#    mem_limit: 8GB
     restart: unless-stopped
     dns:
       - 8.8.8.8
