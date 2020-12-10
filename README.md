@@ -107,6 +107,13 @@ tmpfs                     3.7G         0      3.7G   0% /sys/firmware
 ```
 Note: the *overlay* disk attached to the container is 150GB.
 
+- Forth, we are gonna check the resource consumption of the *prometheus* docker:
+```
+[midu@wien-ostechnix-lan prometheus-compose]$ docker stats prometheus
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+5097ccdf9332        prometheus          0.65%               36.03MiB / 7.441GiB   0.47%               45.8kB / 955kB      142MB / 8.19kB      9
+```
+
 ## Documentation
 1. https://prometheus.io/docs/guides/tls-encryption/
 2. https://docs.nginx.com/nginx-ingress-controller/overview/#what-is-the-ingress
