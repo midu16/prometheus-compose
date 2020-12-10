@@ -35,6 +35,12 @@ Results in the following results:
 Combined Memory: 4,833MiB
 ```
 
+The disk space used by the prometheus databases is located under the ```/var/lib/prometheus/```:
+```
+[root@wien-ostechnix-lan ~]# du -sh /var/lib/prometheus/
+400M	/var/lib/prometheus/
+```
+
 ```The values may differ in reality and vary by version```
 
 
