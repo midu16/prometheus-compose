@@ -16,21 +16,6 @@ services:
       size: '20G'
     mem_limit: 8GB
     restart: unless-stopped
-    deploy:
-      replicas: 1
-      resources:
-        limits:
-          cpus: '4'
-          memory: 12G
-        reservation:
-          cpus: '2'
-          memory: 4G
-      restart_policy:
-        condition: on-failure
-        delay: 5s
-        max_attempts: 3
-        window: 120s
-        
     dns:
       - 8.8.8.8
       - 1.1.1.1
